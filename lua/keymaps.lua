@@ -1,44 +1,46 @@
-vim.keymap.set("", "<Space>", "<Leader>", opts)
+local opts = {}
 
-vim.keymap.set("", "m", "h", opts) vim.keymap.set("", "M", "H", opts)
-vim.keymap.set("", "n", "j", opts) vim.keymap.set("", "N", "J", opts)
-vim.keymap.set("", "e", "k", opts) vim.keymap.set("", "E", "K", opts)
-vim.keymap.set("", "i", "l", opts) vim.keymap.set("", "I", "L", opts)
+vim.g.mapleader = " "
 
-vim.keymap.set("", "u", "i", opts) vim.keymap.set("", "U", "I", opts)
-vim.keymap.set("", "y", "o", opts) vim.keymap.set("", "Y", "O", opts)
+vim.keymap.set("", "m", "h") vim.keymap.set("", "M", "H")
+vim.keymap.set("", "n", "j") vim.keymap.set("", "N", "J")
+vim.keymap.set("", "e", "k") vim.keymap.set("", "E", "K")
+vim.keymap.set("", "i", "l") vim.keymap.set("", "I", "L")
 
-vim.keymap.set("", "l", "u", opts) vim.keymap.set("", "L", "U", opts)
+vim.keymap.set("", "u", "i") vim.keymap.set("", "U", "I")
+vim.keymap.set("", "y", "o") vim.keymap.set("", "Y", "O")
 
-vim.keymap.set("", "j", "y", opts) vim.keymap.set("", "J", "Y", opts)
-vim.keymap.set("", ";", "p", opts) vim.keymap.set("", ":", "P", opts)
+vim.keymap.set("", "l", "u") vim.keymap.set("", "L", "U")
 
-vim.keymap.set("", "k", "n", opts) vim.keymap.set("", "K", "N", opts)
+vim.keymap.set("", "j", "y") vim.keymap.set("", "J", "Y")
+vim.keymap.set("", ";", "p") vim.keymap.set("", ":", "P")
 
-vim.keymap.set("", "h", "m", opts) vim.keymap.set("", "H", "M", opts)
+vim.keymap.set("", "k", "n") vim.keymap.set("", "K", "N")
 
-vim.keymap.set("", "s", "d", opts) vim.keymap.set("", "S", "D", opts)
-vim.keymap.set("", "c", "x", opts) vim.keymap.set("", "C", "X", opts)
+vim.keymap.set("", "h", "m") vim.keymap.set("", "H", "M")
 
-vim.keymap.set("", "p", "r", opts) vim.keymap.set("", "P", "R", opts)
-vim.keymap.set("", "r", "s", opts) vim.keymap.set("", "R", "S", opts)
-vim.keymap.set("", "d", "c", opts) vim.keymap.set("", "D", "C", opts)
+vim.keymap.set("", "s", "d") vim.keymap.set("", "S", "D")
+vim.keymap.set("", "c", "x") vim.keymap.set("", "C", "X")
 
-vim.keymap.set("", "z", "b", opts) vim.keymap.set("", "Z", "B", opts)
-vim.keymap.set("", "f", "e", opts) vim.keymap.set("", "F", "E", opts)
+vim.keymap.set("", "p", "r") vim.keymap.set("", "P", "R")
+vim.keymap.set("", "r", "s") vim.keymap.set("", "R", "S")
+vim.keymap.set("", "d", "c") vim.keymap.set("", "D", "C")
 
-vim.keymap.set("", "t", "f", opts) vim.keymap.set("", "T", "F", opts)
-vim.keymap.set("", "b", "t", opts) vim.keymap.set("", "B", "T", opts)
+vim.keymap.set("", "z", "b") vim.keymap.set("", "Z", "B")
+vim.keymap.set("", "f", "e") vim.keymap.set("", "F", "E")
 
-vim.keymap.set("", "x", "z", opts) vim.keymap.set("", "X", "Z", opts)
+vim.keymap.set("", "t", "f") vim.keymap.set("", "T", "F")
+vim.keymap.set("", "b", "t") vim.keymap.set("", "B", "T")
 
-vim.keymap.set("", "o", ";", opts) vim.keymap.set("", "O", ":", opts)
---[[
-local opts = {
+vim.keymap.set("", "x", "z") vim.keymap.set("", "X", "Z")
+
+vim.keymap.set("", "o", ";") vim.keymap.set("", "O", ":")
+
+opts = {
     noremap = true,
     silent = true
 }
---[[
+
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
 vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
@@ -48,4 +50,5 @@ vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
 vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
---]]
+
+vim.keymap.set("n", "<Leader>n", vim.cmd.Ex)
