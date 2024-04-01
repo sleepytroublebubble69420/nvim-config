@@ -4,15 +4,25 @@ require("lazy").setup
         "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" }
     },
-    { "rktjmp/lush.nvim" },
-    { "xero/miasma.nvim" },
-    { 
+    {
+        "xero/miasma.nvim",
+        branch = "dev",
+        dependencies = {
+            "rktjmp/lush.nvim",
+            "rktjmp/shipwright.nvim",
+        },
+        lazy = false,
+        priority = 1000
+    },
+    {
         "nyoom-engineering/oxocarbon.nvim"
         -- Add in any other configuration; 
         --   event = foo, 
         --   config = bar
         --   end,
     },
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true},
+    { "sainnhe/gruvbox-material" },
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     {
         "nvim-treesitter/nvim-treesitter", 
@@ -29,4 +39,9 @@ require("lazy").setup
     }
 })
 
-vim.cmd.colorscheme("miasma")
+require("gruvbox").setup
+({
+    transparent_mode = true
+})
+vim.cmd.colorscheme("gruvbox")
+require("lualine").setup()
