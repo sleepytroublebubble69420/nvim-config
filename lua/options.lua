@@ -1,14 +1,16 @@
-vim.opt.clipboard = "unnamedplus"
-vim.opt.mouse = "a"
+vim.o.clipboard = "unnamedplus"
+vim.o.mouse = "a"
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
 
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.cursorline = false
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.cursorline = false
 
-vim.opt.incsearch = true
-vim.opt.hlsearch = true
+vim.o.incsearch = true
+vim.o.hlsearch = true
+
+vim.o.tgc = true

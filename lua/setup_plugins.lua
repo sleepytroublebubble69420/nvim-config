@@ -13,8 +13,20 @@ require("lazy").setup
         --   config = bar
         --   end,
     },
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+    {
+        "nvim-treesitter/nvim-treesitter", 
+        build = ":TSUpdate",
+        config = function()
+            local configs = require("nvim-treesitter.configs")
+
+            configs.setup
+            ({
+                highlight = { enable = true },
+                indent = { enable = true }
+            })
+        end
+    }
 })
 
-vim.cmd.colorscheme("oxocarbon")
 vim.cmd.colorscheme("miasma")
