@@ -38,7 +38,8 @@ require("lazy").setup
         end
     },
     { "lewis6991/gitsigns.nvim" },
-    { "tpope/vim-surround" }
+    { "tpope/vim-surround" },
+    { "tpope/vim-fugitive" }
 })
 
 require("gruvbox").setup
