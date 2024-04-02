@@ -1,7 +1,2 @@
-
-require("gruvbox").setup
-({
-    transparent_mode = true
-})
-vim.cmd.colorscheme("gruvbox")
-require("lualine").setup()
+require("plugin_setups.gruvbox")
+require("plugin_setups.lualine")
