@@ -1,3 +1,5 @@
+vim.o.langmap = [[qwfpbjluy\;arstgmneioxcdvzkh;qwertyuiopasdfghjkl;zxcvbnm,QWFPBJLUY:ARSTGMNEIOXCDVZKH;QWERTYUIOPASDFGHJKL:ZXCVBNM]]
+
 vim.o.clipboard = "unnamedplus"
 vim.o.mouse = "a"
 
