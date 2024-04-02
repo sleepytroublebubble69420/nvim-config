@@ -36,7 +36,9 @@ require("lazy").setup
                 indent = { enable = true }
             })
         end
-    }
+    },
+    { "lewis6991/gitsigns.nvim" },
+    { "tpope/vim-surround" }
 })
 
 require("gruvbox").setup
