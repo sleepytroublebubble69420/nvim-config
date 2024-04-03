@@ -34,9 +34,9 @@ require("lazy").setup
         --   config = bar
         --   end,
     },
-    { "ellisonleao/gruvbox.nvim",            priority = 1000,  config = true },
+    { "ellisonleao/gruvbox.nvim",            priority = 1000, config = true },
     { "sainnhe/gruvbox-material" },
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl",     opts = {} },
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl",    opts = {} },
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
@@ -79,5 +79,11 @@ require("lazy").setup
             -- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
             { '<leader>vc', '<cmd>VenvSelectCached<cr>' },
         },
+    },
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.6',
+        -- or                              , branch = '0.1.x',
+        dependencies = { 'nvim-lua/plenary.nvim' }
     }
 })
