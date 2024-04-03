@@ -16,3 +16,5 @@ vim.o.incsearch = true
 vim.o.hlsearch = true
 
 vim.o.tgc = true
+
+vim.o.showmode = false
