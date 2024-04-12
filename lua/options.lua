@@ -20,3 +20,4 @@ vim.o.tgc = true
 vim.o.showmode = false
 
 vim.o.undofile = true
+vim.o.undodir = "./undofiles"
