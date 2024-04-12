@@ -18,3 +18,5 @@ vim.o.hlsearch = true
 vim.o.tgc = true
 
 vim.o.showmode = false
+
+vim.o.undofile = true
