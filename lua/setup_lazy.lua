@@ -103,5 +103,8 @@ require("lazy").setup
     },
     {
         "lewis6991/gitsigns.nvim"
+    },
+    {
+        'ray-x/web-tools.nvim'
     }
 })
